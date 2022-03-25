@@ -26,7 +26,13 @@ namespace Insert_Data
                     "insert into Kasir (Id_kasir,Nama_kasir,Jenis_Kelamin )values('K02','Arya','L')" +
                     "insert into Kasir (Id_kasir,Nama_kasir,Jenis_Kelamin )values('K03','Ditya','L')" +
                     "insert into Kasir (Id_kasir,Nama_kasir,Jenis_Kelamin )values('K04','Gito','L')" +
-                    "insert into Kasir (Id_kasir,Nama_kasir,Jenis_Kelamin )values('K05','Memet','L')",
+                    "insert into Kasir (Id_kasir,Nama_kasir,Jenis_Kelamin )values('K05','Memet','L')" +
+
+                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('C01','Athallariq','L','082278501731')" +
+                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('C02','Indah','P','082278501741')" +
+                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('C03','Rabin','L','082278501701')" +
+                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('C04','Ivan','L','082278501711')" +
+                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('C05','Satia','L','082278501710')" +
                     con);
 
                 cm.ExecuteNonQuery();
