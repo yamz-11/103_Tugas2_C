@@ -18,8 +18,7 @@ namespace Insert_Data
             SqlConnection con = null;
             try
             {
-                con = new SqlConnection("data source=LAPTOP-DMUVDQOK\\WIRATAMA;database=TokoBakery;Integrated Security " +
-                    "= TRUE");
+                con = new SqlConnection("data source=LAPTOP-DMUVDQOK\\WIRATAMA;database=TokoBakery;User ID=sa;Password=Yama190220");
                 con.Open();
 
                 SqlCommand cm = new SqlCommand("insert into Kasir (Id_kasir,Nama_kasir,Jenis_Kelamin )values('K01','Wira','L')" +
@@ -29,11 +28,11 @@ namespace Insert_Data
                     "insert into Kasir (Id_kasir,Nama_kasir,Jenis_Kelamin )values('K05','Memet','L')" +
 
                     //Menambakah data dalam tabel Customer
-                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('C01','Athallariq','L','082278501731')" +
-                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('C02','Indah','P','082278501741')" +
-                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('C03','Rabin','L','082278501701')" +
-                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('C04','Ivan','L','082278501711')" +
-                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('C05','Satia','L','082278501710')" +
+                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('Cs01','Athallariq','L','082278501731')" +
+                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('Cs02','Indah','P','082278501741')" +
+                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('Cs03','Rabin','L','082278501701')" +
+                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('Cs04','Ivan','L','082278501711')" +
+                    "insert into Customer (Id_Customer,Nama_Customer,Jenis_Kelamin,No_Telp )values('Cs05','Satia','L','082278501710')" +
 
                     //Menambahkan data dalam tabel Barang
                     "insert into Baarang (Id_Barang,Nama_Barang,Harga_Barang,Qty,Stock_Barang )values('Brg01','Sweet Bread','Rp.10.000','1','20')" +
@@ -43,11 +42,11 @@ namespace Insert_Data
                     "insert into Baarang (Id_Barang,Nama_Barang,Harga_Barang,Qty,Stock_Barang )values('Brg05','Cookies','Rp.3.000','5','40')" +
 
                     //Menambahkan data dalam tabel Transaksi
-                    "insert into Transaksi (Id_Transaksi,Id_Barang,Id_Customer,Id_Kasir,Qty,Tanggal,Waktu,Jumlah_Bayar,Total_Pembayaran )values('Trk01','Brg01','C01','K01','1','21-03-2022'Rp.10.000','Rp.10.000')" +
-                    "insert into Transaksi (Id_Transaksi,Id_Barang,Id_Customer,Id_Kasir,Qty,Tanggal,Waktu,Jumlah_Bayar,Total_Pembayaran )values('Trk02','Brg02','C02','K02','2','22-03-2022'Rp.40.000','Rp.50.000')" +
-                    "insert into Transaksi (Id_Transaksi,Id_Barang,Id_Customer,Id_Kasir,Qty,Tanggal,Waktu,Jumlah_Bayar,Total_Pembayaran )values('Trk03','Brg03','C03','K03','1','23-03-2022'Rp.8.000','Rp.10.000')" +
-                    "insert into Transaksi (Id_Transaksi,Id_Barang,Id_Customer,Id_Kasir,Qty,Tanggal,Waktu,Jumlah_Bayar,Total_Pembayaran )values('Trk04','Brg04','C04','K04','3','24-03-2022'Rp.15.000','Rp.20.000')" +
-                    "insert into Transaksi (Id_Transaksi,Id_Barang,Id_Customer,Id_Kasir,Qty,Tanggal,Waktu,Jumlah_Bayar,Total_Pembayaran )values('Trk05','Brg05','C05','K05','3','25-03-2022'Rp.15.000','Rp.15.000')",
+                    "insert into Transaksi (Id_Transaksi,Id_Barang,Id_Customer,Id_Kasir,Qty,Tanggal,Jumlah_Bayar,Total_Pembayaran )values('Trk01','Brg01','Cs01','K01','1','2022-03-21','Rp.10.000','Rp.10.000')" +
+                    "insert into Transaksi (Id_Transaksi,Id_Barang,Id_Customer,Id_Kasir,Qty,Tanggal,Jumlah_Bayar,Total_Pembayaran )values('Trk02','Brg02','Cs02','K02','2','2022-03-22','Rp.40.000','Rp.50.000')" +
+                    "insert into Transaksi (Id_Transaksi,Id_Barang,Id_Customer,Id_Kasir,Qty,Tanggal,Jumlah_Bayar,Total_Pembayaran )values('Trk03','Brg03','Cs03','K03','1','2022-03-22','Rp.8.000','Rp.10.000')" +
+                    "insert into Transaksi (Id_Transaksi,Id_Barang,Id_Customer,Id_Kasir,Qty,Tanggal,Jumlah_Bayar,Total_Pembayaran )values('Trk04','Brg04','Cs04','K04','3','2022-03-22','Rp.15.000','Rp.20.000')" +
+                    "insert into Transaksi (Id_Transaksi,Id_Barang,Id_Customer,Id_Kasir,Qty,Tanggal,Jumlah_Bayar,Total_Pembayaran )values('Trk05','Brg05','Cs05','K05','3','2022-03-22','Rp.15.000','Rp.15.000')",
                     con);
 
                 cm.ExecuteNonQuery();
